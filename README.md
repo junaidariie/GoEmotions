@@ -110,7 +110,3 @@ This is a **portfolio-ready NLP project** demonstrating:
 - app development
 
 ---
-
-## 📄 License
-
-MIT
