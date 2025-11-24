@@ -1,6 +1,6 @@
 # GoEmotions Emotion Detector (BiLSTM)
 
-▶️ **Live App:** https://YOUR_APP_LINK_HERE
+▶️ **Live App:** https://goemotions-nw3wxduxmxib7xxtcbm6te.streamlit.app/
 
 This project is a **multi-label emotion classification system** trained on the
 Google Research **GoEmotions dataset**, capable of detecting **28 different emotions**
