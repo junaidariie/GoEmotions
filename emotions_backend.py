@@ -2,12 +2,15 @@ import torch
 import torch.nn as nn
 import numpy as np
 import re
-from nltk.tokenize import word_tokenize
+
 
 
 
 device = 'cuda' if torch.cuda.is_available else 'cpu'
 print(f"Model set to use = ",device)
+
+def simple_tokenize(text):
+    return text.split()
 
 #=============================== Model Defination ============================
 
@@ -81,7 +84,7 @@ def predict_emotions(text, model, vocab, max_len, threshold=0.3):
 
     # preprocess
     text = clean_text(text)
-    tokens = word_tokenize(text)
+    tokens = simple_tokenize(text)
 
     # convert to indices
     seq = [vocab.get(tok, 1) for tok in tokens]   # <UNK>=1
